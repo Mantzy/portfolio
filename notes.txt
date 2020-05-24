@@ -1,0 +1,36 @@
+Project requirements
+
+1-Pages:
+home page
+about me
+portfolio
+contact
+
+2-Consistent design
+
+3-Responsive navigation bar
+
+4-Responsive design
+
+5-Consistent font, icons
+
+6-Animation:
+-click effect
+-loading effect
+-feedback, micro interractions
+-buttons
+
+7-SASS
+
+
+8-creative, original design
+
+Steps:
+1. Look for samples of portfolio (concept, colors, animations, layout)
+2. Selected ones-> write down some concepts
+3. Home page wireframe
+4. Other page Wireframe
+5. Mobile wireframe
+6. Coding (HTML, CSS)
+
+

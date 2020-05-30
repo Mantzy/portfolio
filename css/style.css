@@ -85,6 +85,13 @@ li {
   text-align: center;
   background-color: #AFF24B;
   opacity: 0.7;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+li:hover {
+  transform: scale(1.15);
+  opacity: 1;
 }
 
 header {
@@ -102,6 +109,11 @@ header {
 a {
   color: #010B40;
   text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

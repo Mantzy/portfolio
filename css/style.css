@@ -116,4 +116,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.text {
+  color: #F2F2F2;
+  font-size: 20px;
+  width: 80%;
+  margin: 8% 8%;
+  text-align: justify;
+}
+
 /*# sourceMappingURL=style.css.map */

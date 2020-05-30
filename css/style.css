@@ -45,10 +45,9 @@ figure {
   width: 100%;
 }
 
-.cats {
-  width: 100%;
-}
-
+/*.cats {
+    width: 100%;
+}*/
 h2 {
   position: absolute;
   left: 0;
@@ -75,11 +74,17 @@ ul {
   text-transform: uppercase;
   color: #010B40;
   list-style: none;
+  padding: 10px 10px;
 }
 
 li {
   margin: 10% 10%;
   font-weight: bold;
+  border: 1px solid #010B40;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #AFF24B;
+  opacity: 0.7;
 }
 
 header {
@@ -92,6 +97,11 @@ header {
 
 .lname {
   color: #AFF24B;
+}
+
+a {
+  color: #010B40;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

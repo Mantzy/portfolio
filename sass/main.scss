@@ -1,6 +1,8 @@
 $bgcolor :#F2F2F2;
 $sidebgcolor: #536473;
 $lgreen: #AFF24B;
+$green: #8BBF56;
+$darkcolor: #010B40;
 @mixin minheight {
     min-height: 1000px;
 }
@@ -58,9 +60,10 @@ figure {
     width: 100%;
 }
 
-.cats {
+
+/*.cats {
     width: 100%;
-}
+}*/
 
 h2 {
     position: absolute;
@@ -86,13 +89,19 @@ nav {
 
 ul {
     @include uppercase();
-    color: #010B40;
+    color: $darkcolor;
     list-style: none;
+    padding: 10px 10px;
 }
 
 li {
     margin: 10% 10%;
     font-weight: bold;
+    border: 1px solid $darkcolor;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: $lgreen;
+    opacity: .7;
 }
 
 header {
@@ -105,4 +114,9 @@ header {
 
 .lname {
     color: $lgreen;
+}
+
+a {
+    color: $darkcolor;
+    text-decoration: none;
 }

@@ -1,0 +1,108 @@
+$bgcolor :#F2F2F2;
+$sidebgcolor: #536473;
+$lgreen: #AFF24B;
+@mixin minheight {
+    min-height: 1000px;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+
+/*body {
+    background-color: $color;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: $bgcolor;
+    @include minheight();
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @include minheight();
+}
+
+aside {
+    background-color: $sidebgcolor;
+    display: inline-block;
+    flex: 13%;
+}
+
+main {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 85%;
+    background-image: url('../img/cats.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+figure {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.me {
+    width: 100%;
+}
+
+.cats {
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $lgreen;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    @include uppercase();
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: $sidebgcolor;
+    opacity: .6;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+nav {
+    height: 70%;
+}
+
+ul {
+    @include uppercase();
+    color: #010B40;
+    list-style: none;
+}
+
+li {
+    margin: 10% 10%;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+.lname {
+    color: $lgreen;
+}

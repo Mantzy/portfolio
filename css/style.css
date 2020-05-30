@@ -1,0 +1,97 @@
+/*body {
+    background-color: $color;
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F2F2F2;
+  min-height: 1000px;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 1000px;
+}
+
+aside {
+  background-color: #536473;
+  display: inline-block;
+  flex: 13%;
+}
+
+main {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 85%;
+  background-image: url("../img/cats.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+figure {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.me {
+  width: 100%;
+}
+
+.cats {
+  width: 100%;
+}
+
+h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #AFF24B;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: #536473;
+  opacity: 0.6;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+nav {
+  height: 70%;
+}
+
+ul {
+  text-transform: uppercase;
+  color: #010B40;
+  list-style: none;
+}
+
+li {
+  margin: 10% 10%;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 25px;
+  padding-top: 10%;
+}
+
+.lname {
+  color: #AFF24B;
+}
+
+/*# sourceMappingURL=style.css.map */

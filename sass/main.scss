@@ -55,9 +55,10 @@ main {
     opacity: .8;
     color: $bgcolor;
     &.bg {
-        background-image: url('../img/cats.jpg');
+        background-image: url('../img/horse-paint_dark2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        /*background-size: 100% 100%;*/
         opacity: 1;
     }
 }
@@ -132,10 +133,16 @@ header {
     font-weight: 900;
     font-size: 25px;
     padding-top: 10%;
+    &#index-title {
+        padding-top: 20%;
+        padding-left: 10%;
+        text-align: left;
+    }
 }
 
 .lname {
     color: $lgreen;
+    -webkit-text-stroke: 2px $sidebgcolor;
 }
 
 a {
@@ -206,6 +213,11 @@ h1 {
 
 #fname {
     color: $bgcolor;
+    -webkit-text-stroke: 2px $green;
+}
+
+#index-webdev {
+    -webkit-text-stroke: 2px $green;
 }
 
 #contactform {
@@ -219,8 +231,7 @@ h1 {
 }
 
 #name,
-#email,
-{
+#email {
     padding: 15px;
     width: 40%;
     margin: 5px;

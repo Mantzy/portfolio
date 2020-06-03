@@ -1,138 +1,248 @@
-    $bgcolor :#F2F2F2;
-    $sidebgcolor: #536473;
-    $lgreen: #AFF24B;
-    $green: #8BBF56;
-    $darkcolor: #010B40;
-    @mixin minheight {
-        min-height: 1000px;
-    }
-    
-    @mixin uppercase {
-        text-transform: uppercase;
-    }
-    /*body {
+$bgcolor :#F2F2F2;
+$sidebgcolor: #536473;
+$lgreen: #AFF24B;
+$green: #8BBF56;
+$darkcolor: #010B40;
+@mixin minheight {
+    min-height: 1000px;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin section-base {
+    color: $bgcolor;
+    font-size: 20px;
+    text-align: justify;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+/*body {
     background-color: $color;
 }*/
-    
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color: $bgcolor;
-        @include minheight();
-    }
-    
-    #wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        @include minheight();
-    }
-    
-    aside {
-        background-color: $sidebgcolor;
-        display: inline-block;
-        flex: 13%;
-    }
-    
-    main {
-        display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
-        flex: 85%;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: $bgcolor;
+    @include minheight();
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @include minheight();
+}
+
+aside {
+    background-color: $sidebgcolor;
+    display: inline-block;
+    flex: 13%;
+}
+
+main {
+    display: inline-block;
+    /* margin-left: 10px;
+        margin-right: 10px;*/
+    flex: 85%;
+    background-color: $sidebgcolor;
+    opacity: .8;
+    color: $bgcolor;
+    &.bg {
         background-image: url('../img/cats.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        opacity: 1;
     }
-    
-    figure {
-        position: relative;
-        display: block;
-        margin: auto;
-        width: 100%;
-        overflow: hidden;
-        min-height: 200px;
-    }
-    
-    .me {
-        width: 100%;
-    }
-    /*.cats {
+}
+
+figure {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.me {
+    width: 100%;
+}
+
+
+/*.cats {
     width: 100%;
 }*/
-    
-    h2 {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        color: $lgreen;
-        font-size: 20px;
-        font-weight: 700;
-        padding: 10px 0;
-        @include uppercase();
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        background-color: $sidebgcolor;
-        opacity: .6;
-        margin-bottom: auto;
-        text-align: center;
+
+h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $lgreen;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    @include uppercase();
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: $sidebgcolor;
+    opacity: .6;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+nav {
+    height: 70%;
+}
+
+ul#menu {
+    @include uppercase();
+    color: $darkcolor;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+li.nav {
+    margin: 10% 10%;
+    font-weight: bold;
+    border: 1px solid $darkcolor;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: $lgreen;
+    opacity: .7;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+        opacity: 1;
     }
-    
-    nav {
-        height: 70%;
-    }
-    
-    ul {
-        @include uppercase();
-        color: $darkcolor;
-        list-style: none;
-        padding: 10px 10px;
-    }
-    
-    li {
-        margin: 10% 10%;
-        font-weight: bold;
-        border: 1px solid $darkcolor;
-        padding: 10px 10px;
-        text-align: center;
-        background-color: $lgreen;
-        opacity: .7;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 400ms;
-        &:hover {
-            transform: scale(1.15);
-            opacity: 1;
-        }
-    }
-    
-    header {
-        text-align: center;
-        text-transform: capitalize;
-        font-weight: 900;
-        font-size: 25px;
-        padding-top: 10%;
-    }
-    
-    .lname {
-        color: $lgreen;
-    }
-    
-    a {
-        color: $darkcolor;
-        text-decoration: none;
-    }
-    
-    a:active,
-    a:hover {
-        text-decoration: underline;
-    }
-    
-    .text {
-        color: $bgcolor;
+}
+
+header {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 10%;
+}
+
+.lname {
+    color: $lgreen;
+}
+
+a {
+    color: $darkcolor;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    text-decoration: underline;
+}
+
+.services,
+.testimonial,
+.clients {
+    /*color: $bgcolor;
         font-size: 20px;
         width: 80%;
         margin: 8% 8%;
         text-align: justify;
-    }
+        border: 2px solide white;*/
+    @include section-base();
+    width: 100%;
+}
+
+
+/*.text,
+    .personal {
+        color: $bgcolor;
+        font-size: 20px;
+        text-align: justify;
+        border: 2px solid white;
+        display: inline-block;
+        padding: 15px;
+    
+    @include section-base();
+}
+*/
+
+.personal {
+    vertical-align: top;
+    width: 30%;
+    @include section-base();
+}
+
+.text {
+    width: 65%;
+    @include section-base();
+}
+
+#active {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+ul#personal {
+    list-style-type: none;
+}
+
+.ptitle {
+    font-weight: bold;
+    border-bottom: 2px solid $lgreen;
+}
+
+h1 {
+    color: $lgreen;
+}
+
+#fname {
+    color: $bgcolor;
+}
+
+#contactform {
+    @include section-base();
+    width: 100%;
+}
+
+.mainpart {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#name,
+#email,
+{
+    padding: 15px;
+    width: 40%;
+    margin: 5px;
+}
+
+#message {
+    padding: 15px;
+    width: 95%;
+    margin: 20px;
+}
+
+.input-text {
+    width: 45%;
+    padding: 15px 15px;
+}
+
+.input-textarea {
+    width: 95%;
+}
+
+#button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}

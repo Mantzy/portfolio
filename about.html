@@ -22,11 +22,12 @@
                 <img src="img/profile.jpg" alt="My profile picture" title="Profile picture" class="me">
             </figure>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul id="menu">
+                    <li class="nav"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav" id="active"><a href="about.html"><i class="fas fa-user"></i> About me</a></li>
+                    <li class="nav"><a href="resume.html"><i class="fas fa-scroll"></i> Resume</a></li>
+                    <li class="nav"><a href="portfolio.html"><i class="fas fa-suitcase"></i> Portfolio</a></li>
+                    <li class="nav"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
         </aside>
@@ -34,17 +35,30 @@
 
         <!-- Right block start -->
         <main>
-            <header>
-                <h1>About me</h1>
-            </header>
-            <section class="text">
-                <p>I consider myself a hard working and reliable person. I work well under pressure and like to be part of a team but I am able to work on my own too. I was always interested about IT since I was a kid although first, I tried myself on the
-                    field of Biology and was learning supraindividual biology at the university, but later came back to the world of computers again. I enjoy to keep focusing on multiple things at once and always looking for new solutions. I like to learn
-                    and in IT you always have the opportunity to learn new things as it’s one of the most dynamically evolving industry.</p>
-                <p>Hobbies</p>
-            </section>
+            <div class="mainpart">
+                <header>
+                    <h1>About me</h1>
+                </header>
+                <section class="text">
+                    <p>I consider myself a hard working and reliable person. I work well under pressure and like to be part of a team but I am able to work on my own too. I was always interested about IT since I was a kid although first, I tried myself on
+                        the field of Biology and was learning supraindividual biology at the university, but later came back to the world of computers again. I enjoy to keep focusing on multiple things at once and always looking for new solutions. I like
+                        to learn and in IT you always have the opportunity to learn new things as it’s one of the most dynamically evolving industry.</p>
+                    <p>Hobbies</p>
+                </section>
+                <section class="personal">
+                    <h3>Personal Information</h3>
+                    <ul id="personal">
+                        <li><span class="ptitle">Name:</span> Fanni Zsuzsanna Kovacs</li>
+                        <li><span class="ptitle">Address:</span> Dunfermline, Scotland</li>
+                        <li><span class="ptitle">Mobile:</span> +447484648173</li>
+                        <li><span class="ptitle">Email:</span> fanni.kovacs@hotmail.com</li>
+                    </ul>
+                </section>
+                <section class="services">Services</section>
+                <section class="clients">Clients</section>
+                <section class="testimonial">Testimonials</section>
 
-            <!-- <img src="img/cats.jpg" alt="space holder" title="space holder" class="cats">-->
+            </div>
         </main>
         <!-- Right block end -->
     </div>

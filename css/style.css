@@ -24,12 +24,18 @@ aside {
 
 main {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+      margin-right: 10px;*/
   flex: 85%;
+  background-color: #536473;
+  opacity: 0.8;
+  color: #F2F2F2;
+}
+main.bg {
   background-image: url("../img/cats.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 1;
 }
 
 figure {
@@ -70,14 +76,14 @@ nav {
   height: 70%;
 }
 
-ul {
+ul#menu {
   text-transform: uppercase;
   color: #010B40;
   list-style: none;
   padding: 10px 10px;
 }
 
-li {
+li.nav {
   margin: 10% 10%;
   font-weight: bold;
   border: 1px solid #010B40;
@@ -89,7 +95,7 @@ li {
   transition-property: transform;
   transition-duration: 400ms;
 }
-li:hover {
+li.nav:hover {
   transform: scale(1.15);
   opacity: 1;
 }
@@ -116,12 +122,120 @@ a:hover {
   text-decoration: underline;
 }
 
-.text {
+.services,
+.testimonial,
+.clients {
+  /*color: $bgcolor;
+      font-size: 20px;
+      width: 80%;
+      margin: 8% 8%;
+      text-align: justify;
+      border: 2px solide white;*/
   color: #F2F2F2;
   font-size: 20px;
-  width: 80%;
-  margin: 8% 8%;
   text-align: justify;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+}
+
+/*.text,
+    .personal {
+        color: $bgcolor;
+        font-size: 20px;
+        text-align: justify;
+        border: 2px solid white;
+        display: inline-block;
+        padding: 15px;
+
+    @include section-base();
+}
+*/
+.personal {
+  vertical-align: top;
+  width: 30%;
+  color: #F2F2F2;
+  font-size: 20px;
+  text-align: justify;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 15px;
+}
+
+.text {
+  width: 65%;
+  color: #F2F2F2;
+  font-size: 20px;
+  text-align: justify;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 15px;
+}
+
+#active {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+ul#personal {
+  list-style-type: none;
+}
+
+.ptitle {
+  font-weight: bold;
+  border-bottom: 2px solid #AFF24B;
+}
+
+h1 {
+  color: #AFF24B;
+}
+
+#fname {
+  color: #F2F2F2;
+}
+
+#contactform {
+  color: #F2F2F2;
+  font-size: 20px;
+  text-align: justify;
+  border: 2px solid white;
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+}
+
+.mainpart {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#name,
+#email {
+  padding: 15px;
+  width: 40%;
+  margin: 5px;
+}
+
+#message {
+  padding: 15px;
+  width: 95%;
+  margin: 20px;
+}
+
+.input-text {
+  width: 45%;
+  padding: 15px 15px;
+}
+
+.input-textarea {
+  width: 95%;
+}
+
+#button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

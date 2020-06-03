@@ -22,11 +22,12 @@
                 <img src="img/profile.jpg" alt="My profile picture" title="Profile picture" class="me">
             </figure>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul id="menu">
+                    <li class="nav"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav"><a href="about.html"><i class="fas fa-user"></i> About me</a></li>
+                    <li class="nav"><a href="resume.html"><i class="fas fa-scroll"></i> Resume</a></li>
+                    <li class="nav"><a href="portfolio.html"><i class="fas fa-suitcase"></i> Portfolio</a></li>
+                    <li class="nav" id="active"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
         </aside>
@@ -34,10 +35,25 @@
 
         <!-- Right block start -->
         <main>
-            <header>
-                <h1>Contact</h1>
-            </header>
-            <!-- <img src="img/cats.jpg" alt="space holder" title="space holder" class="cats">-->
+            <div class="mainpart">
+                <header>
+                    <h1>Contact Me</h1>
+                </header>
+                <section id="contactform">
+
+                    <span class="input-text"><input type="text" id="name" name="name" value="Name"></span>
+
+                    <span class="input-text"><input type="text" id="email" name="email" value="Email"></span>
+                    <span class="input-textarea"><textarea name="message" rows="10" cols="30" id="message">How can I help you?</textarea></span>
+
+                    <span id="button"><input type="submit" value="Send Message"></span>
+
+                </section>
+                <section id="contactmail"></section>
+                <section id="contactaddress"></section>
+                <section id="contacttel"></section>
+
+            </div>
         </main>
         <!-- Right block end -->
     </div>

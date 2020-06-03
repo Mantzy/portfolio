@@ -3,6 +3,7 @@ Project requirements
 1-Pages:
 home page
 about me
+resume
 portfolio
 contact
 

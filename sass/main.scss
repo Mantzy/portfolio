@@ -1,5 +1,7 @@
+@import "animations";
 $bgcolor :#F2F2F2;
 $sidebgcolor: #536473;
+$mainbgcolor: #010B40;
 $lgreen: #AFF24B;
 $green: #8BBF56;
 $darkcolor: #010B40;
@@ -16,7 +18,7 @@ $darkcolor: #010B40;
     /*font-size: 20px;*/
     text-align: justify;
     border: 2px solid white;
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 3%;
 }
 
@@ -63,10 +65,11 @@ main {
     /* margin-left: 10px;
         margin-right: 10px;*/
     flex: 85%;
-    background-color: $sidebgcolor;
-    opacity: .8;
+    background-color: $mainbgcolor;
+    /*opacity: .8;*/
     color: $bgcolor;
     /* font-size: 20px;*/
+    transition: all .5s ease-in;
     &.bg {
         background-image: url('../img/horse-paint_dark2.jpg');
         background-repeat: no-repeat;
@@ -251,13 +254,21 @@ a:hover {
 
 .personal {
     vertical-align: top;
-    width: 28%;
+    width: 31%;
     @include section-base();
+    display: inline-block;
+}
+
+#about-main {
+    margin: auto;
+    border: 2px solid white;
+    width: 96%;
 }
 
 .text {
     width: 55%;
     @include section-base();
+    display: inline-block;
 }
 
 #active {

@@ -20,6 +20,10 @@ $darkcolor: #010B40;
     padding: 3%;
 }
 
+@mixin letter-spacing {
+    letter-spacing: 0.5px;
+}
+
 
 /*body {
     background-color: $color;
@@ -99,6 +103,12 @@ h2 {
     opacity: .6;
     margin-bottom: auto;
     text-align: center;
+    @include letter-spacing();
+}
+
+h3 {
+    @include uppercase();
+    @include letter-spacing();
 }
 
 nav {
@@ -135,6 +145,9 @@ li {
     }
 }
 
+.fa-phone,
+.fa-map-marker-alt,
+.fa-at,
 .fa-palette,
 .fa-mobile-alt,
 .fa-eye,
@@ -144,7 +157,7 @@ li {
 }
 
 header {
-    text-align: center;
+    /*text-align: center;*/
     text-transform: capitalize;
     font-weight: 900;
     font-size: 25px;
@@ -173,7 +186,8 @@ a:hover {
 
 #services,
 #testimonial,
-#clients {
+#clients,
+#contact-details {
     /*color: $bgcolor;
         font-size: 20px;
         width: 80%;
@@ -197,6 +211,14 @@ a:hover {
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.contact-details {
+    width: 30%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
 }
 
 
@@ -261,7 +283,8 @@ h3 {
 
 #contactform {
     @include section-base();
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .mainpart {

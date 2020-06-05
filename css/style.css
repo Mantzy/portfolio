@@ -73,6 +73,12 @@ h2 {
   opacity: 0.6;
   margin-bottom: auto;
   text-align: center;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 nav {
@@ -107,6 +113,9 @@ li.nav:hover {
   opacity: 1;
 }
 
+.fa-phone,
+.fa-map-marker-alt,
+.fa-at,
 .fa-palette,
 .fa-mobile-alt,
 .fa-eye,
@@ -116,7 +125,7 @@ li.nav:hover {
 }
 
 header {
-  text-align: center;
+  /*text-align: center;*/
   text-transform: capitalize;
   font-weight: 900;
   font-size: 25px;
@@ -145,7 +154,8 @@ a:hover {
 
 #services,
 #testimonial,
-#clients {
+#clients,
+#contact-details {
   /*color: $bgcolor;
       font-size: 20px;
       width: 80%;
@@ -174,6 +184,14 @@ a:hover {
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.contact-details {
+  width: 30%;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
 }
 
 /*.text,
@@ -251,7 +269,8 @@ h3 {
   border: 2px solid white;
   display: inline-block;
   padding: 3%;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .mainpart {

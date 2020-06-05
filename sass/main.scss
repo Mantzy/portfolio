@@ -13,11 +13,11 @@ $darkcolor: #010B40;
 
 @mixin section-base {
     color: $bgcolor;
-    font-size: 20px;
+    /*font-size: 20px;*/
     text-align: justify;
     border: 2px solid white;
     display: inline-block;
-    padding: 15px;
+    padding: 3%;
 }
 
 
@@ -31,6 +31,7 @@ body {
     font-family: sans-serif;
     background-color: $bgcolor;
     @include minheight();
+    font-size: 16px;
 }
 
 #wrapper {
@@ -54,6 +55,7 @@ main {
     background-color: $sidebgcolor;
     opacity: .8;
     color: $bgcolor;
+    /* font-size: 20px;*/
     &.bg {
         background-image: url('../img/horse-paint_dark2.jpg');
         background-repeat: no-repeat;
@@ -110,21 +112,35 @@ ul#menu {
     padding: 10px 10px;
 }
 
-li.nav {
-    margin: 10% 10%;
-    font-weight: bold;
-    border: 1px solid $darkcolor;
-    padding: 10px 10px;
-    text-align: center;
-    background-color: $lgreen;
-    opacity: .7;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
-    &:hover {
-        transform: scale(1.15);
-        opacity: 1;
+li {
+    &.personal-list {
+        line-height: 1em;
+        margin-bottom: 15px;
     }
+    &.nav {
+        margin: 10% 10%;
+        font-weight: bold;
+        border: 1px solid $darkcolor;
+        padding: 10px 10px;
+        text-align: left;
+        background-color: $lgreen;
+        opacity: .7;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+        &:hover {
+            transform: scale(1.15);
+            opacity: 1;
+        }
+    }
+}
+
+.fa-palette,
+.fa-mobile-alt,
+.fa-eye,
+.fa-laptop {
+    font-size: 30px;
+    color: $lgreen;
 }
 
 header {
@@ -155,9 +171,9 @@ a:hover {
     text-decoration: underline;
 }
 
-.services,
-.testimonial,
-.clients {
+#services,
+#testimonial,
+#clients {
     /*color: $bgcolor;
         font-size: 20px;
         width: 80%;
@@ -165,7 +181,22 @@ a:hover {
         text-align: justify;
         border: 2px solide white;*/
     @include section-base();
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.about-title {
     width: 100%;
+}
+
+.services,
+.testimonial,
+.clients {
+    width: 23%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -184,12 +215,12 @@ a:hover {
 
 .personal {
     vertical-align: top;
-    width: 30%;
+    width: 28%;
     @include section-base();
 }
 
 .text {
-    width: 65%;
+    width: 55%;
     @include section-base();
 }
 
@@ -209,6 +240,14 @@ ul#personal {
 
 h1 {
     color: $lgreen;
+    &.h1-left {
+        text-align: left;
+    }
+}
+
+h3 {
+    color: $lgreen;
+    text-align: center;
 }
 
 #fname {

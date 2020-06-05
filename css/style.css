@@ -124,6 +124,11 @@ li.nav:hover {
   color: #AFF24B;
 }
 
+.fa-images {
+  font-size: 80px;
+  color: #AFF24B;
+}
+
 header {
   /*text-align: center;*/
   text-transform: capitalize;
@@ -155,7 +160,8 @@ a:hover {
 #services,
 #testimonial,
 #clients,
-#contact-details {
+#contact-details,
+#portfolio {
   /*color: $bgcolor;
       font-size: 20px;
       width: 80%;
@@ -171,6 +177,7 @@ a:hover {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
+  margin: auto;
 }
 
 .about-title {
@@ -184,6 +191,7 @@ a:hover {
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+  margin: auto;
 }
 
 .contact-details {
@@ -192,6 +200,14 @@ a:hover {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
+}
+
+.portfolio {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  width: 45%;
 }
 
 /*.text,

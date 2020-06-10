@@ -218,6 +218,9 @@ ul#menu {
   list-style: none;
   padding: 10px 10px;
 }
+ul.resume-ul {
+  list-style: none;
+}
 
 li.personal-list {
   line-height: 1em;
@@ -264,7 +267,7 @@ header {
   padding-top: 3%;
 }
 header#index-title {
-  padding-top: 20%;
+  padding-top: 10%;
   padding-left: 10%;
   text-align: left;
 }
@@ -288,7 +291,8 @@ a:hover {
 #testimonial,
 #clients,
 #contact-details,
-#portfolio {
+#portfolio,
+#resume {
   /*color: $bgcolor;
       font-size: 20px;
       width: 80%;
@@ -298,7 +302,7 @@ a:hover {
   color: #F2F2F2;
   /*font-size: 20px;*/
   text-align: justify;
-  border: 2px solid white;
+  /* border: 2px solid white;*/
   /*display: inline-block;*/
   padding: 3%;
   width: 90%;
@@ -337,6 +341,15 @@ a:hover {
   width: 45%;
 }
 
+.resume {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  width: 45%;
+  margin: 0;
+}
+
 /*.text,
     .personal {
         color: $bgcolor;
@@ -355,7 +368,7 @@ a:hover {
   color: #F2F2F2;
   /*font-size: 20px;*/
   text-align: justify;
-  border: 2px solid white;
+  /* border: 2px solid white;*/
   /*display: inline-block;*/
   padding: 3%;
   display: inline-block;
@@ -372,7 +385,7 @@ a:hover {
   color: #F2F2F2;
   /*font-size: 20px;*/
   text-align: justify;
-  border: 2px solid white;
+  /* border: 2px solid white;*/
   /*display: inline-block;*/
   padding: 3%;
   display: inline-block;
@@ -417,7 +430,7 @@ h3 {
   color: #F2F2F2;
   /*font-size: 20px;*/
   text-align: justify;
-  border: 2px solid white;
+  /* border: 2px solid white;*/
   /*display: inline-block;*/
   padding: 3%;
   width: 90%;

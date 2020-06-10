@@ -17,7 +17,7 @@ $darkcolor: #010B40;
     color: $bgcolor;
     /*font-size: 20px;*/
     text-align: justify;
-    border: 2px solid white;
+    /* border: 2px solid white;*/
     /*display: inline-block;*/
     padding: 3%;
 }
@@ -125,11 +125,16 @@ nav {
     height: 70%;
 }
 
-ul#menu {
-    @include uppercase();
-    color: $darkcolor;
-    list-style: none;
-    padding: 10px 10px;
+ul {
+    &#menu {
+        @include uppercase();
+        color: $darkcolor;
+        list-style: none;
+        padding: 10px 10px;
+    }
+    &.resume-ul {
+        list-style: none;
+    }
 }
 
 li {
@@ -178,7 +183,7 @@ header {
     font-size: 25px;
     padding-top: 3%;
     &#index-title {
-        padding-top: 20%;
+        padding-top: 10%;
         padding-left: 10%;
         text-align: left;
     }
@@ -203,7 +208,8 @@ a:hover {
 #testimonial,
 #clients,
 #contact-details,
-#portfolio {
+#portfolio,
+#resume {
     /*color: $bgcolor;
         font-size: 20px;
         width: 80%;
@@ -236,6 +242,12 @@ a:hover {
 .portfolio {
     @include section-boxes();
     width: 45%;
+}
+
+.resume {
+    @include section-boxes();
+    width: 45%;
+    margin: 0;
 }
 
 

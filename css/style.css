@@ -132,6 +132,7 @@ $brown: #F2C288;
 $lgreen: #AFF24B;
 $green: #BABF93;
 $darkcolor: #010B40;*/
+/*$mainbgcolor: #010B40;*/
 /*body {
     background-color: $color;
 }*/
@@ -173,7 +174,7 @@ main.bg {
   background-repeat: no-repeat;
   background-size: cover;
   /*background-size: 100% 100%;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 figure {
@@ -240,18 +241,29 @@ li.personal-list {
 li.nav {
   margin: 10% 10%;
   font-weight: bold;
-  border: 1px solid #010B40;
+  border: 6px solid #010B40;
   padding: 10px 10px;
-  text-align: left;
-  background-color: #AFF24B;
-  opacity: 0.7;
+  text-align: center;
+  background-color: #8BBF56;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
+  transition: transform 400ms, background-color 400ms, box-shadow 500ms ease;
+  /* transition: all .5s ease;*/
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 200px 20px 200px 20px/200px 20px 200px 20px;
+  /*
+  200px 15px 200px 15px/15px 200px 15px 200px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  */
 }
 li.nav:hover {
   transform: scale(1.15);
-  opacity: 1;
+  background-color: #AFF24B;
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
 }
 li.resume-list {
   border-left: 2px solid #AFF24B;
@@ -416,7 +428,8 @@ a:hover {
 
 #active {
   transform: scale(1.15);
-  opacity: 1;
+  background-color: #AFF24B;
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
 }
 
 ul#personal {

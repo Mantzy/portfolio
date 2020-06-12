@@ -13,7 +13,9 @@ $darkcolor: #010B40;*/
 
 $bgcolor :#F2F2F2;
 $sidebgcolor: #536473;
-$mainbgcolor: #010B40;
+
+/*$mainbgcolor: #010B40;*/
+
 $lgreen: #AFF24B;
 $green: #8BBF56;
 $darkcolor: #010B40;
@@ -78,7 +80,7 @@ main {
     /* margin-left: 10px;
         margin-right: 10px;*/
     flex: 85%;
-    background-color: $mainbgcolor;
+    background-color: $darkcolor;
     /*opacity: .8;*/
     color: $bgcolor;
     /* font-size: 20px;*/
@@ -88,7 +90,7 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         /*background-size: 100% 100%;*/
-        opacity: 1;
+        /*opacity: 1;*/
     }
 }
 
@@ -161,17 +163,28 @@ li {
     &.nav {
         margin: 10% 10%;
         font-weight: bold;
-        border: 1px solid $darkcolor;
+        border: 6px solid $darkcolor;
         padding: 10px 10px;
-        text-align: left;
-        background-color: $lgreen;
-        opacity: .7;
+        text-align: center;
+        background-color: $green;
         transform: scale(1);
         transition-property: transform;
         transition-duration: 400ms;
+        transition: transform 400ms, background-color 400ms, box-shadow 500ms ease;
+        /* transition: all .5s ease;*/
+        box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+        border-radius: 200px 20px 200px 20px/200px 20px 200px 20px;
+        /*
+        200px 15px 200px 15px/15px 200px 15px 200px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
         &:hover {
             transform: scale(1.15);
-            opacity: 1;
+            background-color: $lgreen;
+            box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
         }
     }
     &.resume-list {
@@ -317,7 +330,8 @@ a:hover {
 
 #active {
     transform: scale(1.15);
-    opacity: 1;
+    background-color: $lgreen;
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
 }
 
 ul#personal {

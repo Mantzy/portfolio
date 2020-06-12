@@ -2,21 +2,22 @@
 
 /*$bgcolor :#F2DCB3;*/
 
-$bgcolor :#F2F2F2;
+
+/*$bgcolor :#F2F2F2;
 $sidebgcolor: #232617;
 $mainbgcolor: #4B593E;
 $brown: #F2C288;
 $lgreen: #AFF24B;
 $green: #BABF93;
-$darkcolor: #010B40;
+$darkcolor: #010B40;*/
 
-/*$bgcolor :#F2F2F2;
+$bgcolor :#F2F2F2;
 $sidebgcolor: #536473;
 $mainbgcolor: #010B40;
 $lgreen: #AFF24B;
 $green: #8BBF56;
-$darkcolor: #010B40;*/
-
+$darkcolor: #010B40;
+$brown: #F2C288;
 @mixin minheight {
     min-height: 1000px;
 }
@@ -83,7 +84,7 @@ main {
     /* font-size: 20px;*/
     transition: all .5s ease-in;
     &.bg {
-        background-image: url('../img/horse-paint_dark2.jpg');
+        background-image: url('../img/horse-paint_dark-blue.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         /*background-size: 100% 100%;*/

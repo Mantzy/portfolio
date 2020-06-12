@@ -126,10 +126,11 @@
 }
 /*$bgcolor :#F2DCB3;*/
 /*$bgcolor :#F2F2F2;
-$sidebgcolor: #536473;
-$mainbgcolor: #010B40;
+$sidebgcolor: #232617;
+$mainbgcolor: #4B593E;
+$brown: #F2C288;
 $lgreen: #AFF24B;
-$green: #8BBF56;
+$green: #BABF93;
 $darkcolor: #010B40;*/
 /*body {
     background-color: $color;
@@ -151,7 +152,7 @@ body {
 }
 
 aside {
-  background-color: #232617;
+  background-color: #536473;
   display: inline-block;
   flex: 13%;
 }
@@ -161,14 +162,14 @@ main {
   /* margin-left: 10px;
       margin-right: 10px;*/
   flex: 85%;
-  background-color: #4B593E;
+  background-color: #010B40;
   /*opacity: .8;*/
   color: #F2F2F2;
   /* font-size: 20px;*/
   transition: all 0.5s ease-in;
 }
 main.bg {
-  background-image: url("../img/horse-paint_dark2.jpg");
+  background-image: url("../img/horse-paint_dark-blue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /*background-size: 100% 100%;*/
@@ -203,7 +204,7 @@ h2 {
   text-transform: uppercase;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
-  background-color: #232617;
+  background-color: #536473;
   opacity: 0.6;
   margin-bottom: auto;
   text-align: center;
@@ -295,7 +296,7 @@ header#index-title {
 
 .lname {
   color: #AFF24B;
-  -webkit-text-stroke: 2px #232617;
+  -webkit-text-stroke: 2px #536473;
 }
 
 a {

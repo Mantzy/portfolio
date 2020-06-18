@@ -1,0 +1,95 @@
+/*@media only screen and (max-width: 700px) {
+    #services,
+    #testimonial,
+    #clients,
+    #contact-details,
+    #portfolio,
+    #resume {
+        @include section-base();
+        width: 90%;
+        display: flex;
+        flex-direction: columns;
+    }
+    .text {
+        width: 100% !important;
+        @include section-base();
+    }
+    .personal {
+        vertical-align: top;
+        width: 100%;
+        @include section-base();
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include minheight();
+    }
+    .services,
+    .testimonial,
+    .clients {
+        width: 100% !important;
+        @include section-boxes();
+    }
+}*/
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: 12px;
+    }
+    #about-main {
+        display: flex;
+        flex-flow: row wrap;
+        .text,
+        .personal {
+            flex: 100%;
+        }
+    }
+    #about-services,
+    #about-testimonial,
+    #about-clients,
+    #contact-details,
+    #portfolio,
+    #main-resume {
+        display: flex;
+        flex-flow: row wrap;
+        .about-title,
+        .clients,
+        .testimonial,
+        .resume,
+        .c-details,
+        .portfolio,
+        .services {
+            flex: 100%;
+        }
+    }
+    .c-details,
+    .portfolio {
+        margin-bottom: 10px !important;
+    }
+    .text,
+    .about-personal {
+        flex: 100%;
+    }
+    ul.resume-ul {
+        margin-left: 0px !important;
+    }
+    .date {
+        margin-left: 0px !important;
+    }
+    #name,
+    #email,
+    #message {
+        width: 90% !important;
+    }
+    #message {
+        padding: 0px !important;
+    }
+    .input-text {
+        width: 90% !important;
+        padding: 0px !important;
+    }
+    h4 {
+        text-align: left !important;
+    }
+}

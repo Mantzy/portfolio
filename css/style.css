@@ -124,6 +124,263 @@
     transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 }
+/*@media only screen and (max-width: 700px) {
+    #services,
+    #testimonial,
+    #clients,
+    #contact-details,
+    #portfolio,
+    #resume {
+        @include section-base();
+        width: 90%;
+        display: flex;
+        flex-direction: columns;
+    }
+    .text {
+        width: 100% !important;
+        @include section-base();
+    }
+    .personal {
+        vertical-align: top;
+        width: 100%;
+        @include section-base();
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include minheight();
+    }
+    .services,
+    .testimonial,
+    .clients {
+        width: 100% !important;
+        @include section-boxes();
+    }
+}*/
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 12px;
+  }
+
+  #about-main {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #about-main .text,
+#about-main .personal {
+    flex: 100%;
+  }
+
+  #about-services,
+#about-testimonial,
+#about-clients,
+#contact-details,
+#portfolio,
+#main-resume {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #about-services .about-title,
+#about-services .clients,
+#about-services .testimonial,
+#about-services .resume,
+#about-services .c-details,
+#about-services .portfolio,
+#about-services .services,
+#about-testimonial .about-title,
+#about-testimonial .clients,
+#about-testimonial .testimonial,
+#about-testimonial .resume,
+#about-testimonial .c-details,
+#about-testimonial .portfolio,
+#about-testimonial .services,
+#about-clients .about-title,
+#about-clients .clients,
+#about-clients .testimonial,
+#about-clients .resume,
+#about-clients .c-details,
+#about-clients .portfolio,
+#about-clients .services,
+#contact-details .about-title,
+#contact-details .clients,
+#contact-details .testimonial,
+#contact-details .resume,
+#contact-details .c-details,
+#contact-details .portfolio,
+#contact-details .services,
+#portfolio .about-title,
+#portfolio .clients,
+#portfolio .testimonial,
+#portfolio .resume,
+#portfolio .c-details,
+#portfolio .portfolio,
+#portfolio .services,
+#main-resume .about-title,
+#main-resume .clients,
+#main-resume .testimonial,
+#main-resume .resume,
+#main-resume .c-details,
+#main-resume .portfolio,
+#main-resume .services {
+    flex: 100%;
+  }
+
+  .c-details,
+.portfolio {
+    margin-bottom: 10px !important;
+  }
+
+  .text,
+.about-personal {
+    flex: 100%;
+  }
+
+  ul.resume-ul {
+    margin-left: 0px !important;
+  }
+
+  .date {
+    margin-left: 0px !important;
+  }
+
+  #name,
+#email,
+#message {
+    width: 90% !important;
+  }
+
+  #message {
+    padding: 0px !important;
+  }
+
+  .input-text {
+    width: 90% !important;
+    padding: 0px !important;
+  }
+
+  h4 {
+    text-align: left !important;
+  }
+}
+/* portfolio start */
+.view {
+  /*width: 300px;
+  height: 200px;*/
+  /*margin: 10px;
+  float: left;*/
+  margin-left: 10%;
+  margin-bottom: 5%;
+  min-height: 240px;
+  border: 5px solid #AFF24B;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background-color: #536473;
+}
+
+.view .mask,
+.view .content {
+  /*width: 300px;
+  height: 200px;*/
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #AFF24B;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0;
+}
+
+.view p {
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #AFF24B;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #AFF24B;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #F2F2F2;
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+.view-first img {
+  transition: all 0.2s linear;
+}
+
+.view-first .mask {
+  opacity: 0;
+  background-color: #010B40;
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view-first a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+  transition-delay: 0.2s;
+}
+
+/* portfolio end*/
 /*$bgcolor :#F2DCB3;*/
 /*$bgcolor :#F2F2F2;
 $sidebgcolor: #232617;
@@ -159,7 +416,7 @@ aside {
 }
 
 main {
-  display: inline-block;
+  /* display: inline-block;*/
   /* margin-left: 10px;
       margin-right: 10px;*/
   flex: 85%;
@@ -167,7 +424,7 @@ main {
   /*opacity: .8;*/
   color: #F2F2F2;
   /* font-size: 20px;*/
-  transition: all 0.5s ease-in;
+  /*transition: all .5s ease-in;*/
 }
 main.bg {
   background-image: url("../img/horse-paint_dark-blue.jpg");
@@ -321,12 +578,12 @@ a:hover {
   text-decoration: underline;
 }
 
-#services,
-#testimonial,
-#clients,
+#about-services,
+#about-testimonial,
+#about-clients,
 #contact-details,
 #portfolio,
-#resume {
+#main-resume {
   /*color: $bgcolor;
       font-size: 20px;
       width: 80%;
@@ -359,7 +616,7 @@ a:hover {
   margin: auto;
 }
 
-.contact-details {
+.c-details {
   width: 30%;
   text-align: center;
   padding-left: 5px;
@@ -373,7 +630,7 @@ a:hover {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
-  width: 45%;
+  width: 25%;
 }
 
 .resume {
@@ -397,7 +654,7 @@ a:hover {
     @include section-base();
 }
 */
-.personal {
+.about-personal {
   vertical-align: top;
   width: 31%;
   color: #F2F2F2;

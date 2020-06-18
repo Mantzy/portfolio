@@ -215,6 +215,7 @@ li {
 .fa-laptop {
     font-size: 30px;
     color: $lgreen;
+    margin-top: 8px;
 }
 
 .fa-images {
@@ -254,7 +255,7 @@ a:hover {
 #about-testimonial,
 #about-clients,
 #contact-details,
-#portfolio,
+#main-portfolio,
 #main-resume {
     /*color: $bgcolor;
         font-size: 20px;
@@ -278,6 +279,17 @@ a:hover {
 .clients {
     width: 23%;
     @include section-boxes();
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition: transform 400ms, background-color 400ms border-radius 400ms ease;
+    &:hover {
+        transform: scale(1.15);
+        background-color: $bgcolor;
+        border-radius: 25px;
+        color: $darkcolor;
+        font-weight: bold;
+    }
 }
 
 .c-details {
@@ -288,7 +300,8 @@ a:hover {
 
 .portfolio {
     @include section-boxes();
-    width: 25%;
+    width: 45%;
+    margin-bottom: 20px;
 }
 
 .resume {

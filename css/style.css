@@ -176,7 +176,7 @@
 #about-testimonial,
 #about-clients,
 #contact-details,
-#portfolio,
+#main-portfolio,
 #main-resume {
     display: flex;
     flex-flow: row wrap;
@@ -209,13 +209,13 @@
 #contact-details .c-details,
 #contact-details .portfolio,
 #contact-details .services,
-#portfolio .about-title,
-#portfolio .clients,
-#portfolio .testimonial,
-#portfolio .resume,
-#portfolio .c-details,
-#portfolio .portfolio,
-#portfolio .services,
+#main-portfolio .about-title,
+#main-portfolio .clients,
+#main-portfolio .testimonial,
+#main-portfolio .resume,
+#main-portfolio .c-details,
+#main-portfolio .portfolio,
+#main-portfolio .services,
 #main-resume .about-title,
 #main-resume .clients,
 #main-resume .testimonial,
@@ -259,7 +259,7 @@
     padding: 0px !important;
   }
 
-  h4 {
+  h4.portfolio-jobtitle {
     text-align: left !important;
   }
 }
@@ -271,7 +271,7 @@
   float: left;*/
   margin-left: 10%;
   margin-bottom: 5%;
-  min-height: 240px;
+  min-height: 220px;
   border: 5px solid #AFF24B;
   overflow: hidden;
   position: relative;
@@ -543,6 +543,7 @@ li.resume-list {
 .fa-laptop {
   font-size: 30px;
   color: #AFF24B;
+  margin-top: 8px;
 }
 
 .fa-images {
@@ -582,7 +583,7 @@ a:hover {
 #about-testimonial,
 #about-clients,
 #contact-details,
-#portfolio,
+#main-portfolio,
 #main-resume {
   /*color: $bgcolor;
       font-size: 20px;
@@ -614,6 +615,19 @@ a:hover {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition: transform 400ms, background-color 400ms border-radius 400ms ease;
+}
+.services:hover,
+.testimonial:hover,
+.clients:hover {
+  transform: scale(1.15);
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  color: #010B40;
+  font-weight: bold;
 }
 
 .c-details {
@@ -630,7 +644,8 @@ a:hover {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
-  width: 25%;
+  width: 45%;
+  margin-bottom: 20px;
 }
 
 .resume {

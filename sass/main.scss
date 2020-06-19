@@ -91,7 +91,7 @@ main {
         background-image: url('../img/horse-paint_dark-blue.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        /*background-size: 100% 100%;*/
+        /* background-size: 100%;*/
         /*opacity: 1;*/
     }
 }
@@ -291,6 +291,8 @@ a:hover {
     width: 30%;
     @include section-boxes();
     letter-spacing: 0.1em;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .portfolio {
@@ -405,9 +407,9 @@ h5 {
 }
 
 #message {
-    padding: 15px;
     width: 95%;
     margin: 20px;
+    padding: 15px;
 }
 
 input[type=text],
@@ -417,6 +419,9 @@ textarea {
     background-color: $bgcolor;
     transition: background-color 0.4s ease-in-out;
     &:active {
+        background-color: $lgreen;
+    }
+    &:focus {
         background-color: $lgreen;
     }
 }
@@ -446,4 +451,5 @@ input[type=submit] {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    display: block;
 }

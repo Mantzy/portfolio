@@ -245,13 +245,14 @@
   }
 
   #name,
-#email,
-#message {
+#email {
     width: 90% !important;
   }
 
   #message {
     padding: 0px !important;
+    width: 99% !important;
+    margin: 0px !important;
   }
 
   .input-text {
@@ -262,14 +263,18 @@
   h4.portfolio-jobtitle {
     text-align: left !important;
   }
+
+  .input-textarea {
+    padding-left: 5px !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   aside {
-    flex: 25% !important;
+    flex: 30% !important;
   }
 
   main {
-    flex: 75% !important;
+    flex: 70% !important;
   }
 
   .text {
@@ -282,6 +287,7 @@
 
   .c-details {
     width: 45% !important;
+    font-size: 10px !important;
   }
 }
 /* portfolio start */
@@ -451,7 +457,7 @@ main.bg {
   background-image: url("../img/horse-paint_dark-blue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-size: 100% 100%;*/
+  /* background-size: 100%;*/
   /*opacity: 1;*/
 }
 
@@ -655,6 +661,8 @@ a:hover {
   padding-right: 5px;
   margin: auto;
   letter-spacing: 0.1em;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .portfolio {
@@ -788,9 +796,9 @@ h5 {
 }
 
 #message {
-  padding: 15px;
   width: 95%;
   margin: 20px;
+  padding: 15px;
 }
 
 input[type=text],
@@ -802,6 +810,10 @@ textarea {
 }
 input[type=text]:active,
 textarea:active {
+  background-color: #AFF24B;
+}
+input[type=text]:focus,
+textarea:focus {
   background-color: #AFF24B;
 }
 
@@ -830,6 +842,7 @@ input[type=submit] {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

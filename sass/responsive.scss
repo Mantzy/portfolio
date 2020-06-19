@@ -78,12 +78,13 @@
         margin-left: 0px !important;
     }
     #name,
-    #email,
-    #message {
+    #email {
         width: 90% !important;
     }
     #message {
         padding: 0px !important;
+        width: 99% !important;
+        margin: 0px !important;
     }
     .input-text {
         width: 90% !important;
@@ -92,14 +93,17 @@
     h4.portfolio-jobtitle {
         text-align: left !important;
     }
+    .input-textarea {
+        padding-left: 5px !important;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     aside {
-        flex: 25% !important;
+        flex: 30% !important;
     }
     main {
-        flex: 75% !important;
+        flex: 70% !important;
     }
     .text {
         width: 42% !important;
@@ -109,5 +113,6 @@
     }
     .c-details {
         width: 45% !important;
+        font-size: 10px !important;
     }
 }

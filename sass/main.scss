@@ -410,6 +410,29 @@ h5 {
     margin: 20px;
 }
 
+input[type=text],
+textarea {
+    border-radius: 10px;
+    border: 2px solid $lgreen;
+    background-color: $bgcolor;
+    transition: background-color 0.4s ease-in-out;
+    &:active {
+        background-color: $lgreen;
+    }
+}
+
+input[type=submit] {
+    width: 40%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: $lgreen;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    color: $darkcolor;
+}
+
 .input-text {
     width: 45%;
     padding: 15px 15px;

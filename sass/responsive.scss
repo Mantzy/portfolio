@@ -93,3 +93,21 @@
         text-align: left !important;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    aside {
+        flex: 25% !important;
+    }
+    main {
+        flex: 75% !important;
+    }
+    .text {
+        width: 42% !important;
+    }
+    .about-personal {
+        width: 45% !important;
+    }
+    .c-details {
+        width: 45% !important;
+    }
+}

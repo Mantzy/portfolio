@@ -1,4 +1,4 @@
-/*@media only screen and (max-width: 700px) {
+    /*@media only screen and (max-width: 700px) {
     #services,
     #testimonial,
     #clients,
@@ -32,87 +32,115 @@
         @include section-boxes();
     }
 }*/
-
-@media only screen and (max-width: 700px) {
-    body {
-        font-size: 12px;
-    }
-    #about-main {
-        display: flex;
-        flex-flow: row wrap;
-        .text,
-        .personal {
-            flex: 100%;
+    
+    $lgreen: #AFF24B;
+    $green: #8BBF56;
+    $darkcolor: #010B40;
+    $brown: #F2C288;
+    $bgcolor :#F2F2F2;
+    $sidebgcolor: #536473;
+    @media only screen and (max-width: 700px) {
+        body {
+            font-size: 12px;
         }
-    }
-    #about-services,
-    #about-testimonial,
-    #about-clients,
-    #contact-details,
-    #main-portfolio,
-    #main-resume {
-        display: flex;
-        flex-flow: row wrap;
-        .about-title,
-        .clients,
-        .testimonial,
-        .resume,
+        #about-main {
+            display: flex;
+            flex-flow: row wrap;
+            .text,
+            .personal {
+                flex: 100%;
+            }
+        }
+        #about-services,
+        #about-testimonial,
+        #about-clients,
+        #contact-details,
+        #main-portfolio,
+        #main-resume {
+            display: flex;
+            flex-flow: row wrap;
+            .about-title,
+            .clients,
+            .testimonial,
+            .resume,
+            .c-details,
+            .portfolio,
+            .services {
+                flex: 100%;
+            }
+        }
         .c-details,
-        .portfolio,
-        .services {
+        .portfolio {
+            margin-bottom: 10px !important;
+        }
+        .text,
+        .about-personal {
             flex: 100%;
         }
+        ul.resume-ul {
+            margin-left: 0px !important;
+        }
+        .date {
+            margin-left: 0px !important;
+        }
+        #name,
+        #email {
+            width: 90% !important;
+        }
+        #message {
+            padding: 0px !important;
+            width: 99% !important;
+            margin: 0px !important;
+        }
+        .input-text {
+            width: 90% !important;
+            padding: 0px !important;
+        }
+        h4.portfolio-jobtitle {
+            text-align: left !important;
+        }
+        .input-textarea {
+            padding-left: 5px !important;
+        }
+        main {
+            &.bg {
+                background-image: url('../img/mobile-bg.jpg') !important;
+            }
+        }
+        .lname {
+            -webkit-text-stroke: 2px $darkcolor !important;
+        }
+        #fname {
+            color: $lgreen !important;
+            -webkit-text-stroke: 2px $darkcolor !important;
+        }
     }
-    .c-details,
-    .portfolio {
-        margin-bottom: 10px !important;
+    
+    @media only screen and (max-width: 1024px) {
+        aside {
+            flex: 30% !important;
+        }
+        main {
+            flex: 70% !important;
+            &.bg {
+                background-image: url('../img/tablet-bg.jpg') !important;
+            }
+        }
+        .text {
+            width: 42% !important;
+        }
+        .about-personal {
+            width: 45% !important;
+        }
+        .c-details {
+            width: 45% !important;
+            font-size: 10px !important;
+        }
+        .lname {
+            -webkit-text-stroke: 2px $darkcolor !important;
+        }
+        #fname {
+            color: $lgreen !important;
+            -webkit-text-stroke: 2px $darkcolor !important;
+        }
     }
-    .text,
-    .about-personal {
-        flex: 100%;
-    }
-    ul.resume-ul {
-        margin-left: 0px !important;
-    }
-    .date {
-        margin-left: 0px !important;
-    }
-    #name,
-    #email {
-        width: 90% !important;
-    }
-    #message {
-        padding: 0px !important;
-        width: 99% !important;
-        margin: 0px !important;
-    }
-    .input-text {
-        width: 90% !important;
-        padding: 0px !important;
-    }
-    h4.portfolio-jobtitle {
-        text-align: left !important;
-    }
-    .input-textarea {
-        padding-left: 5px !important;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    aside {
-        flex: 30% !important;
-    }
-    main {
-        flex: 70% !important;
-    }
-    .text {
-        width: 42% !important;
-    }
-    .about-personal {
-        width: 45% !important;
-    }
-    .c-details {
-        width: 45% !important;
-        font-size: 10px !important;
-    }
-}

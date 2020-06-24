@@ -1,0 +1,470 @@
+@import "animations";
+@import "responsive";
+@import "portfolio-animation";
+
+/*$bgcolor :#F2DCB3;*/
+
+
+/*$bgcolor :#F2F2F2;
+$sidebgcolor: #232617;
+$mainbgcolor: #4B593E;
+$brown: #F2C288;
+$lgreen: #AFF24B;
+$green: #BABF93;
+$darkcolor: #010B40;*/
+
+$bgcolor :#F2F2F2;
+$sidebgcolor: #536473;
+
+/*$mainbgcolor: #010B40;*/
+
+$lgreen: #AFF24B;
+$green: #8BBF56;
+$darkcolor: #010B40;
+$brown: #F2C288;
+@mixin minheight {
+    min-height: 1000px;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin section-base {
+    color: $bgcolor;
+    /*font-size: 20px;*/
+    text-align: justify;
+    /* border: 2px solid white;*/
+    /*display: inline-block;*/
+    padding: 3%;
+}
+
+@mixin letter-spacing {
+    letter-spacing: 0.5px;
+}
+
+@mixin section-boxes {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+}
+
+
+/*body {
+    background-color: $color;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: $bgcolor;
+    @include minheight();
+    font-size: 16px;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @include minheight();
+}
+
+aside {
+    background-color: $sidebgcolor;
+    display: inline-block;
+    flex: 13%;
+}
+
+main {
+    /* display: inline-block;*/
+    /* margin-left: 10px;
+        margin-right: 10px;*/
+    flex: 85%;
+    background-color: $darkcolor;
+    /*opacity: .8;*/
+    color: $bgcolor;
+    /* font-size: 20px;*/
+    /*transition: all .5s ease-in;*/
+    &.bg {
+        background-image: url('../img/horse-paint_dark-blue.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-size: 100%;*/
+        /*opacity: 1;*/
+    }
+}
+
+figure {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.me {
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $lgreen;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    @include uppercase();
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: $sidebgcolor;
+    opacity: .6;
+    margin-bottom: auto;
+    text-align: center;
+    @include letter-spacing();
+}
+
+h3 {
+    @include uppercase();
+    @include letter-spacing();
+    letter-spacing: 0.1em;
+}
+
+nav {
+    height: 70%;
+}
+
+ul {
+    &#menu {
+        @include uppercase();
+        color: $darkcolor;
+        list-style: none;
+        padding: 10px 10px;
+    }
+    &.resume-ul {
+        list-style: none;
+        text-align: justify;
+        margin-left: 10%;
+    }
+}
+
+li {
+    &.personal-list {
+        line-height: 1em;
+        margin-bottom: 15px;
+    }
+    &.nav {
+        margin: 10% 10%;
+        font-weight: bold;
+        border: 6px solid $darkcolor;
+        padding: 10px 10px;
+        text-align: center;
+        background-color: $green;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+        transition: transform 400ms, background-color 400ms, box-shadow 500ms ease;
+        /* transition: all .5s ease;*/
+        box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+        border-radius: 200px 20px 200px 20px/200px 20px 200px 20px;
+        /*
+        200px 15px 200px 15px/15px 200px 15px 200px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius:15px 255px;
+        */
+        &:hover {
+            transform: scale(1.15);
+            background-color: $lgreen;
+            box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+        }
+    }
+    &.resume-list {
+        border-left: 2px solid $lgreen;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.date {
+    margin-left: -55px;
+    color: $brown;
+    font-weight: bold;
+}
+
+.from {}
+
+.to {}
+
+.fa-phone,
+.fa-map-marker-alt,
+.fa-at,
+.fa-palette,
+.fa-mobile-alt,
+.fa-eye,
+.fa-laptop {
+    font-size: 30px;
+    color: $lgreen;
+    margin-top: 8px;
+}
+
+.fa-images {
+    font-size: 80px;
+    color: $lgreen;
+}
+
+header {
+    /*text-align: center;*/
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 3%;
+    &#index-title {
+        padding-top: 10%;
+        padding-left: 10%;
+        text-align: left;
+    }
+}
+
+.lname {
+    color: $lgreen;
+    -webkit-text-stroke: 2px $sidebgcolor;
+}
+
+a {
+    color: $darkcolor;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    text-decoration: underline;
+}
+
+#about-services,
+#about-testimonial,
+#about-clients,
+#contact-details,
+#main-portfolio,
+#main-resume {
+    /*color: $bgcolor;
+        font-size: 20px;
+        width: 80%;
+        margin: 8% 8%;
+        text-align: justify;
+        border: 2px solide white;*/
+    @include section-base();
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.about-title {
+    width: 100%;
+}
+
+.services,
+.testimonial,
+.clients {
+    width: 23%;
+    @include section-boxes();
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition: transform 400ms background-color 400ms border-radius 400ms ease;
+    &:hover {
+        transform: scale(1.15);
+        background-color: $bgcolor;
+        border-radius: 25px;
+        color: $darkcolor;
+        font-weight: bold;
+    }
+}
+
+.clients {
+    background-color: $lgreen;
+    overflow: hidden;
+    border-radius: 50%;
+    &:hover {
+        transform: scale(1.15);
+        background-color: $bgcolor;
+        border-radius: 50%;
+    }
+}
+
+.c-details {
+    width: 30%;
+    @include section-boxes();
+    letter-spacing: 0.1em;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.portfolio {
+    @include section-boxes();
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.resume {
+    @include section-boxes();
+    width: 45%;
+    margin: 0;
+}
+
+
+/*.text,
+    .personal {
+        color: $bgcolor;
+        font-size: 20px;
+        text-align: justify;
+        border: 2px solid white;
+        display: inline-block;
+        padding: 15px;
+    
+    @include section-base();
+}
+*/
+
+.about-personal {
+    vertical-align: top;
+    width: 31%;
+    @include section-base();
+    display: inline-block;
+}
+
+#about-main {
+    margin: auto;
+    /*border: 2px solid white;*/
+    width: 96%;
+}
+
+.text {
+    width: 55%;
+    @include section-base();
+    display: inline-block;
+}
+
+#active {
+    transform: scale(1.15);
+    background-color: $lgreen;
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+}
+
+ul#personal {
+    list-style-type: none;
+}
+
+.ptitle {
+    font-weight: bold;
+    border-bottom: 2px solid $lgreen;
+}
+
+h1 {
+    color: $lgreen;
+    &.h1-left {
+        text-align: left;
+    }
+}
+
+h3 {
+    color: $lgreen;
+    text-align: center;
+}
+
+h4 {
+    @include uppercase();
+    @include letter-spacing();
+}
+
+h5 {
+    @include uppercase();
+    @include letter-spacing();
+    color: $lgreen;
+}
+
+#fname {
+    color: $bgcolor;
+    -webkit-text-stroke: 2px $darkcolor;
+}
+
+#index-webdev {
+    -webkit-text-stroke: 2px $darkcolor;
+    letter-spacing: 0.2em;
+}
+
+#contactform {
+    @include section-base();
+    width: 90%;
+    margin: auto;
+}
+
+.mainpart {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#name,
+#email {
+    padding: 15px;
+    width: 40%;
+    margin: 5px;
+}
+
+#message {
+    width: 95%;
+    margin: 20px;
+    padding: 15px;
+}
+
+input[type=text],
+textarea {
+    border-radius: 10px;
+    border: 2px solid $lgreen;
+    background-color: $bgcolor;
+    transition: background-color 0.4s ease-in-out;
+    &:active {
+        background-color: $lgreen;
+    }
+    &:focus {
+        background-color: $lgreen;
+    }
+}
+
+input[type=submit] {
+    width: 40%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: $lgreen;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    color: $darkcolor;
+}
+
+.input-text {
+    width: 45%;
+    padding: 15px 15px;
+}
+
+.input-textarea {
+    width: 95%;
+}
+
+#button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.clients-pic {
+    max-width: 200px;
+}

@@ -226,6 +226,12 @@
     flex: 100%;
   }
 
+  .clients,
+.services,
+.testimonials {
+    margin-top: 10px !important;
+  }
+
   #main-portfolio {
     width: 90% !important;
   }
@@ -584,6 +590,11 @@ li.resume-list {
   padding: 10px 10px;
   margin-bottom: 20px;
 }
+li.resume-list:hover {
+  color: #010B40 !important;
+  background-color: #536473;
+  font-weight: bold;
+}
 
 .date {
   margin-left: -55px;
@@ -702,6 +713,7 @@ a:hover {
   background-color: #AFF24B;
   overflow: hidden;
   border-radius: 15%;
+  max-width: 200px;
 }
 .clients:hover {
   transform: scale(1.15);
@@ -911,6 +923,39 @@ input[type=submit] {
 .testimonial-name {
   text-align: right;
   font-style: italic;
+}
+
+.btn {
+  border: 2px solid white;
+  width: 200px;
+}
+
+.progress__bar {
+  border: 2px solid white;
+  width: 200px;
+  background-color: #AFF24B;
+}
+
+.btn:active > .progress__bar {
+  animation: progress-bar 1000ms;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,8 +26,8 @@ $sidebgcolor: #536473;
 
 .view .mask,
 .view .content {
-    /*width: 300px;
-    height: 200px;*/
+    /*width: 300px;*/
+    height: 100%;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -125,3 +125,5 @@ $sidebgcolor: #536473;
 
 
 /* portfolio end*/
+
+.portfolio-pic {}

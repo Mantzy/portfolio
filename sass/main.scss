@@ -265,6 +265,10 @@ a:hover {
     margin: auto;
 }
 
+#main-portfolio {
+    width: 65%;
+}
+
 .about-title {
     width: 100%;
 }
@@ -277,7 +281,7 @@ a:hover {
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
-    transition: transform 400ms background-color 400ms border-radius 400ms ease;
+    transition: transform 400ms, background-color 400ms, border-radius 300ms, opacity 300ms ease;
     &:hover {
         transform: scale(1.15);
         background-color: $bgcolor;
@@ -287,10 +291,17 @@ a:hover {
     }
 }
 
+.testimonial {
+    opacity: 1;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 .clients {
     background-color: $lgreen;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 15%;
     &:hover {
         transform: scale(1.15);
         background-color: $bgcolor;
@@ -308,7 +319,7 @@ a:hover {
 
 .portfolio {
     @include section-boxes();
-    width: 45%;
+    width: auto;
     margin-bottom: 20px;
 }
 

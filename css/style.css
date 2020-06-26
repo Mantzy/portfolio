@@ -226,6 +226,10 @@
     flex: 100%;
   }
 
+  #main-portfolio {
+    width: 90% !important;
+  }
+
   .c-details,
 .portfolio {
     margin-bottom: 10px !important;
@@ -339,8 +343,8 @@
 
 .view .mask,
 .view .content {
-  /*width: 300px;
-  height: 200px;*/
+  /*width: 300px;*/
+  height: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -656,6 +660,10 @@ a:hover {
   margin: auto;
 }
 
+#main-portfolio {
+  width: 65%;
+}
+
 .about-title {
   width: 100%;
 }
@@ -671,7 +679,7 @@ a:hover {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
-  transition: transform 400ms background-color 400ms border-radius 400ms ease;
+  transition: transform 400ms, background-color 400ms, border-radius 300ms, opacity 300ms ease;
 }
 .services:hover,
 .testimonial:hover,
@@ -683,10 +691,17 @@ a:hover {
   font-weight: bold;
 }
 
+.testimonial {
+  opacity: 1;
+}
+.testimonial:hover {
+  opacity: 0.5;
+}
+
 .clients {
   background-color: #AFF24B;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 15%;
 }
 .clients:hover {
   transform: scale(1.15);
@@ -710,7 +725,7 @@ a:hover {
   padding-left: 5px;
   padding-right: 5px;
   margin: auto;
-  width: 45%;
+  width: auto;
   margin-bottom: 20px;
 }
 

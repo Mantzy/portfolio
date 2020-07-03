@@ -300,7 +300,9 @@
   }
 
   .clients {
-    max-width: 120px !important;
+    /*max-width: 120px !important;*/
+    width: 40% !important;
+    margin-bottom: 15px !important;
   }
 
   .services,
@@ -539,7 +541,7 @@ ul.resume-ul {
 }
 
 li.personal-list {
-  line-height: 1em;
+  line-height: 1.5em;
   margin-bottom: 15px;
 }
 li.nav {

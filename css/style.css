@@ -124,40 +124,6 @@
     transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
 }
-/*@media only screen and (max-width: 700px) {
-    #services,
-    #testimonial,
-    #clients,
-    #contact-details,
-    #portfolio,
-    #resume {
-        @include section-base();
-        width: 90%;
-        display: flex;
-        flex-direction: columns;
-    }
-    .text {
-        width: 100% !important;
-        @include section-base();
-    }
-    .personal {
-        vertical-align: top;
-        width: 100%;
-        @include section-base();
-    }
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @include minheight();
-    }
-    .services,
-    .testimonial,
-    .clients {
-        width: 100% !important;
-        @include section-boxes();
-    }
-}*/
 @media only screen and (max-width: 700px) {
   body {
     font-size: 12px;
@@ -290,6 +256,10 @@
     color: #AFF24B !important;
     -webkit-text-stroke: 2px #010B40 !important;
   }
+
+  input[type=submit] {
+    width: auto !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   aside {
@@ -327,6 +297,20 @@
 
   .clients-pic {
     max-width: 120px !important;
+  }
+
+  .clients {
+    max-width: 120px !important;
+  }
+
+  .services,
+.testimonial {
+    width: 40% !important;
+    margin: 10px 10px !important;
+  }
+
+  .resume {
+    width: 100% !important;
   }
 }
 /* portfolio start */
@@ -702,8 +686,13 @@ a:hover {
   font-weight: bold;
 }
 
+.services {
+  width: 21%;
+}
+
 .testimonial {
   opacity: 1;
+  width: 21%;
 }
 .testimonial:hover {
   opacity: 0.5;
@@ -888,12 +877,19 @@ input[type=submit] {
   width: 40%;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #AFF24B;
   text-transform: uppercase;
   font-weight: bolder;
   letter-spacing: 0.1em;
   color: #010B40;
+  transition: background-color 0.4s ease-in-out;
+}
+input[type=submit]:active {
+  background-color: #536473;
+}
+input[type=submit]:focus {
+  background-color: #536473;
 }
 
 .input-text {
@@ -928,16 +924,6 @@ input[type=submit] {
 .btn {
   border: 2px solid white;
   width: 200px;
-}
-
-.progress__bar {
-  border: 2px solid white;
-  width: 200px;
-  background-color: #AFF24B;
-}
-
-.btn:active > .progress__bar {
-  animation: progress-bar 1000ms;
 }
 
 @keyframes progress-bar {

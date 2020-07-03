@@ -296,8 +296,13 @@ a:hover {
     }
 }
 
+.services {
+    width: 21%;
+}
+
 .testimonial {
     opacity: 1;
+    width: 21%;
     &:hover {
         opacity: 0.5;
     }
@@ -458,12 +463,19 @@ input[type=submit] {
     width: 40%;
     padding-bottom: 15px;
     padding-top: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: $lgreen;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 0.1em;
     color: $darkcolor;
+    transition: background-color 0.4s ease-in-out;
+    &:active {
+        background-color: $sidebgcolor;
+    }
+    &:focus {
+        background-color: $sidebgcolor;
+    }
 }
 
 .input-text {
@@ -498,20 +510,6 @@ input[type=submit] {
 .btn {
     border: 2px solid white;
     width: 200px;
-}
-
-.progress__bar {
-    border: 2px solid white;
-    width: 200px;
-    background-color: $lgreen;
-}
-
-.btn {
-    &:active {
-        &>.progress__bar {
-            animation: progress-bar 1000ms;
-        }
-    }
 }
 
 @keyframes progress-bar {

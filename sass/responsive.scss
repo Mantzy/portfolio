@@ -102,11 +102,9 @@ $sidebgcolor: #536473;
             background-image: url('../img/tablet-bg.jpg') !important;
         }
     }
-    .text {
-        width: 42% !important;
-    }
+    .text,
     .about-personal {
-        width: 45% !important;
+        width: auto !important;
     }
     .c-details {
         width: 45% !important;

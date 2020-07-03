@@ -50,6 +50,24 @@ $brown: #F2C288;
     margin: auto;
 }
 
+@mixin hobby-icons {
+    font-size: 40px;
+    color: $lgreen;
+    margin-right: 20px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /*body {
     background-color: $color;
@@ -371,6 +389,30 @@ a:hover {
     width: 55%;
     @include section-base();
     display: inline-block;
+}
+
+#hobby {
+    text-align: center;
+}
+
+.fa-horse {
+    @include hobby-icons();
+    animation: blink 500ms ease-in-out;
+}
+
+.fa-book-open {
+    @include hobby-icons();
+    animation: blink 700ms ease-in-out;
+}
+
+.fa-gamepad {
+    @include hobby-icons();
+    animation: blink 900ms ease-in-out;
+}
+
+.fa-paint-brush {
+    @include hobby-icons();
+    animation: blink 1100ms ease-in-out;
 }
 
 #active {
